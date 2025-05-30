@@ -1,0 +1,23 @@
+@APBD_6_HostAddress = http://localhost:5052
+
+### 1. GET /api/trips (with optional pagination)
+GET {{APBD_6_HostAddress}}/api/trips?page=1&pageSize=5
+Accept: application/json
+
+### 2. DELETE /api/clients/{idClient}   (the third one should be able to remove from db, others should print Bad Request or similar stuff)
+DELETE {{APBD_6_HostAddress}}/api/clients/3
+Accept: application/json
+
+### 3. POST /api/trips/{idTrip}/clients
+POST {{APBD_6_HostAddress}}/api/trips/3/clients
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Anna",
+  "lastName": "Nowak",
+  "email": "anna@nowak.com",
+  "telephone": "123456789",
+  "pesel": "92040212345",
+  "paymentDate": "2025-07-01T00:00:00Z"
+}
