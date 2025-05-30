@@ -1,4 +1,4 @@
-# APBD_6 – Client and Trip Management API
+# APBD_6 – Client and Trip Management API (Database First approach)
 
 This project is a RESTful API for managing clients and trips. It supports operations such as retrieving trip details, assigning clients to trips, and removing clients under certain conditions.
 
